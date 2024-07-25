@@ -6,7 +6,7 @@ export default React.createClass({
   render() {
     return (
       <div>
-        <Title render="Awesome App"/>
+        <Title render="ai shopping assistant"/>
         <h1>Welcome to your app.</h1>
         <ul>
           <li><IndexLink to="/">Home</IndexLink></li>
