@@ -1,6 +1,7 @@
 import React from 'react'
 import { IndexLink, Link } from 'react-router'
 import Title from 'react-title-component'
+impo
 
 export default React.createClass({
   render() {
