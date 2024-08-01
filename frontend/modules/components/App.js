@@ -1,23 +1,25 @@
-import React from 'react'
-import { IndexLink, Link } from 'react-router'
-import Title from 'react-title-component'
-import 
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from './components/Header';
+import ProductList from './components/ProductList';
+import Cart from './components/Cart';
+import Checkout from './components/Checkout';
+import Footer from './components/Footer';
+import AIAssistant from './components/AIAssistant';
 
-export default React.createClass({
-  render() {
-    return (
-      <div>
-        <Title render="Awesome App"/>
-        <h1>Welcome to your app.</h1>
-        <ul>
-          <li><IndexLink to="/">Home</IndexLink></li>
-          <li><Link to="/dragon">A DRAGON!</Link></li>
-          <li><Link to="/not-dragon">An old URL to a DRAGON!</Link></li>
-        </ul>
-        {this.props.children}
-      </div>
-    )
-  }
-})
+const App = () => {
+  return (
+    <Router>
+      <Header />
+      <AIAssistant />
+      <Switch>
+        <Route path="/" exact component={ProductList} />
+        <Route path="/cart" component={Cart} />
+        <Route path="/checkout" component={Checkout} />
+      </Switch>
+      <Footer />
+    </Router>
+  );
+};
 
 export default App;

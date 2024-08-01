@@ -14,7 +14,7 @@ const Cart = ({ cartItems, setCartItems }) => {
   };
 
   if (cartItems.length === 0) return <Typography>Your cart is empty.</Typography>;
-
+  
   return (
     <Container>
       {cartItems.map(item => (

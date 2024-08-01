@@ -1,0 +1,55 @@
+.ai-assistant {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .ai-assistant-header {
+    padding: 10px;
+    background-color: #3f51b5;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .ai-assistant-chat {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .ai-assistant-message {
+    margin: 5px 0;
+  }
+  
+  .ai-assistant-message.user {
+    color: #000;
+  }
+  
+  .ai-assistant-message.ai {
+    color: #3f51b5;
+  }
+  
+  .ai-assistant-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .ai-assistant-input input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .ai-assistant-input button {
+    margin-left: 10px;
+  }
+  
